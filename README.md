@@ -25,7 +25,7 @@ from MLengine import *
 class Model(Engine): 
     def __init__(self):
         self.layers = [Layer.Linear(2, 16, Tensor.relu),Layer.Linear(16, 1, Tensor.sigmoid)]
-        Engine.optimizer = Optimizer.SGD()
+        self.optimizer = Optimizer.SGD()
     def __call__(self, x: Tensor) -> Tensor:
         return x.forward(self.layers)
     def train_step(self, X: Tensor, Y: Tensor):
