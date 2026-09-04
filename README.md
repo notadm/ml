@@ -17,7 +17,7 @@ A lightweight machine learning and automatic-differentiation library built from 
 - Tensor utilities: reshape, transpose, flatten, concatenate, indexing
 - Tensor creation: zeros, ones, uniform, normal, randint, eye, arange
 
-## Simple Example
+## Example
 
 ```python
 from MLengine import *
